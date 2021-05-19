@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}BOARD/CBSE{% endblock title %}
+
+{% block body %}
+
+<!--breadcrumb-->
+       <div class="section">
+        
+            <nav class="breadcrumb is-large is-centered has-succeeds-separator " aria-label="breadcrumbs">
+                <ul class="box">
+                   <li><a href="index.html"><b>HOME</b></a></li>
+                   <li class = "is-active"><a href="cbse.html"><b>BOARD/CBSE</b></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    
+<!--/breadcrumb--> 
+ 
+<!--section-->
+
+       <div class="box section">
+
+            <div class="columns is-multiline is-mobile">
+                <div class="column is-half">
+                    <article class="media notification is-black">
+					    <div class="media-content">
+						    <div class="content">
+							    <h1 class="title is-size-4" style=" font-family:Archivo Black"><strong>CLASS-10</strong></h1>
+							    <button onClick="location.href='cbse-class10.html'" class="button is-primary is-rounded  "><b>GET</b></button>   
+						    </div>
+					    </div>
+				    </article>
+                </div>
+            
+                <div class="column is-half">
+                    <article class="media notification is-black">
+					    <div class="media-content">
+						    <div class="content">
+							    <h1 class="title is-size-4" style=" font-family:Archivo Black"><strong>CLASS-12</strong></h1>
+							    <button onClick="location.href='cbse-class12.html'" class="button is-primary is-rounded  "><b>GET</b></button>   
+						    </div>
+					    </div>
+				    </article>
+                </div>
+            </div>
+            
+        </div>
+    
+<!--section-->
+
+{% endblock body %}
+
+        

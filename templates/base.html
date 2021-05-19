@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="has-navbar-fixed-top">
+	
+    <head>
+	    
+        <title>{% block title %} {% endblock title %}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Bulma!</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<link rel="stylesheet" href="/static/css/css.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo Black">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Frijole">
+		
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+		
+        <style>
+            .center {
+	            display: flex;
+	            justify-content: center;
+	            align-items: center;
+            }
+            .emoticon { 
+
+                white-space: pre; 
+                      
+            }
+        </style>
+
+        <script>
+                document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+                    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+                    if ($navbarBurgers.length > 0) {
+
+// Add a click event on each of them
+                        $navbarBurgers.forEach( el => {
+
+                            el.addEventListener('click', () => {
+
+// Get the target from the "data-target" attribute
+                                const target = el.dataset.target;
+                                const $target = document.getElementById(target);
+
+// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                                el.classList.toggle('is-active');
+                                $target.classList.toggle('is-active');
+                            });
+                        });
+                    }
+                });
+        </script>
+        
+    </head>
+
+    <body>
+
+<!-- navbar -->
+		
+	    <nav class="navbar is-white is-fixed-top" role="navigation" aria-label="main navigation">
+        
+        <div class="container is-max-widescreen">
+		    
+            <div class="navbar-brand">
+               <figure class="image " >
+                    <img class=" is-rounded  " style="width:50px;height:70px;"  src="/static/images/logo.png">
+                </figure>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu  ">
+                <div class="navbar-start">
+                    <a href="index.html" class="navbar-item ">
+					    <div class="box home">
+						<h6 class="title is-6 home1"><b>HOME</b></h6>
+                        </div> 
+					</a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <div class="box home">
+						    <h6 class="title is-6 home1"><b>BOARD</b></h6>
+                        </div> 
+                    </a>
+
+                        <div class="navbar-dropdown home">
+                            <a href="cbse.html" class="navbar-item home1">
+                                <strong>CBSE</strong>
+                            </a>
+                            <a href="icse.html" class="navbar-item home1">
+                                <strong>ICSE</strong>
+                            </a>
+                        </div>
+
+                </div>
+
+				<div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link ">
+                        <div class="box home">
+						    <h6 class="title is-6 home1"><b>UNIVERSITY</b></h1>
+                        </div>
+                    </a>
+
+                        <div class="navbar-dropdown home">
+                            <a class="navbar-item home1" href="pu.html">
+                                <strong>PU</strong>
+                            </a>
+                        </div>
+
+                    </div>
+
+					<div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            <div class="box home">
+						        <h6 class="title is-6 home1"><b>COMPETITIVE EXAMS</b></h1>
+                            </div> 
+                        </a>
+
+                            <div class="navbar-dropdown home">
+                               <a class="navbar-item home1">
+                                   <strong>CDS</strong>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                   <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary" href="">
+                                <strong>BLOG-COMING SOON</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		
+        </div>
+        
+        </nav>
+		
+<!-- /navbar -->
+
+
+{% block body %}
+
+{% endblock body %}
+
+<!--footer-->
+
+        <footer class="footer ">
+            
+            <div class="content has-text-centered">
+                <p  style="color:black">
+                    LYP.in by KATOCH                   
+                </p>
+            </div>
+
+        </footer>
+
+<!--/footer-->
+
+    </body>
+
+</html>
