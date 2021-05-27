@@ -29,8 +29,20 @@ urlpatterns = [
     path('pu.html', views.pu, name= 'pu'),
     path('ba.html', views.ba, name= 'ba'),
     path('ba1.html', views.ba1, name= 'ba1'),
+    path('ba2.html', views.ba2, name= 'ba2'),
+    path('ba3.html', views.ba3, name= 'ba3'),
+    path('ba4.html', views.ba4, name= 'ba4'),
+    path('ba5.html', views.ba5, name= 'ba5'),
+    path('ba6.html', views.ba6, name= 'ba6'),
     path('pu.html', views.pu, name= 'pu'),
-    path('pu.html', views.pu, name= 'pu'), 
+    path('bcom.html', views.bcom, name= 'bcom'),
+    path('bcom1.html', views.bcom1, name= 'bcom1'),
+    path('bcom2.html', views.bcom2, name= 'bcom2'),
+    path('bcom3.html', views.bcom3, name= 'bcom3'),
+    path('bcom4.html', views.bcom4, name= 'bcom4'),
+    path('bcom5.html', views.bcom5, name= 'bcom5'),
+    path('bcom6.html', views.bcom6, name= 'bcom6'),
+    
 ]
 
 
