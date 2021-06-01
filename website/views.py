@@ -71,3 +71,7 @@ def bcom5(request):
 
 def bcom6(request):
     return render(request, 'bcom6.html', {})
+
+def maths2020(request):
+    return render(request, 'maths2020.html', {})
+

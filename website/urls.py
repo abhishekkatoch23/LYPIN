@@ -42,6 +42,7 @@ urlpatterns = [
     path('bcom4.html', views.bcom4, name= 'bcom4'),
     path('bcom5.html', views.bcom5, name= 'bcom5'),
     path('bcom6.html', views.bcom6, name= 'bcom6'),
+    path('maths2020.html', views.maths2020, name= 'maths2020'),
     
 ]
 
